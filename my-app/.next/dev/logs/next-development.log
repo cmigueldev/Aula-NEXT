@@ -1,3 +1,439 @@
-[00:00:09.705] Server  LOG      ✓ Ready in 8.7s
-[00:00:38.119] Server  LOG      ○ Compiling / ...
-[00:00:48.098] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:12.288] Server  LOG      ✓ Ready in 11.4s
+[00:00:21.576] Server  LOG      ○ Compiling / ...
+[00:00:26.623] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:17.146] Server  LOG      ✓ Compiled in 1805ms
+[00:14:09.211] Browser WARN    Image with src "/logo-ifpb.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:14:11.696] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:11.862] Browser WARN    Image with src "/logo-ifpb.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:14:15.308] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:15.411] Browser WARN    Image with src "/logo-ifpb.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:18:16.217] Server  ERROR    ⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '..@/components/footer/Footer'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+> 2 | import Footer from'..@/components/footer/Footer';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import "./globals.css";
+  4 |
+  5 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:18:16.231] Server  ERROR    ⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '..@/components/footer/Footer'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+> 2 | import Footer from'..@/components/footer/Footer';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import "./globals.css";
+  4 |
+  5 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:18:16.236] Server  ERROR    ⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '..@/components/footer/Footer'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+> 2 | import Footer from'..@/components/footer/Footer';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import "./globals.css";
+  4 |
+  5 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:18:16.251] Server  ERROR    ⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '..@/components/footer/Footer'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+> 2 | import Footer from'..@/components/footer/Footer';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import "./globals.css";
+  4 |
+  5 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:18:16.254] Server  ERROR    ⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '..@/components/footer/Footer'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+> 2 | import Footer from'..@/components/footer/Footer';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import "./globals.css";
+  4 |
+  5 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:18:16.257] Server  ERROR    ⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '..@/components/footer/Footer'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+> 2 | import Footer from'..@/components/footer/Footer';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import "./globals.css";
+  4 |
+  5 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:18:16.264] Server  ERROR    ⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '..@/components/footer/Footer'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+> 2 | import Footer from'..@/components/footer/Footer';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import "./globals.css";
+  4 |
+  5 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:18:16.537] Browser ERROR   ./app/layout.js:2:1
+Module not found: Can't resolve '..@/components/footer/Footer'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+> 2 | import Footer from'..@/components/footer/Footer';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import "./globals.css";
+  4 |
+  5 | const geistSans = Geist({
+
+https://nextjs.org/docs/messages/module-not-found
+[00:18:18.548] Browser ERROR   ./app/layout.js:2:1
+Module not found: Can't resolve '..@/components/footer/Footer'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+> 2 | import Footer from'..@/components/footer/Footer';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import "./globals.css";
+  4 |
+  5 | const geistSans = Geist({
+
+https://nextjs.org/docs/messages/module-not-found
+[00:29:07.643] Server  ERROR    ⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '..@/components/footer/Footer'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+> 2 | import Footer from'..@/components/footer/Footer';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import "./globals.css";
+  4 |
+  5 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:29:07.677] Server  ERROR    ⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '..@/components/footer/Footer'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+> 2 | import Footer from'..@/components/footer/Footer';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import "./globals.css";
+  4 |
+  5 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:29:07.689] Server  ERROR    ⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '..@/components/footer/Footer'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+> 2 | import Footer from'..@/components/footer/Footer';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import "./globals.css";
+  4 |
+  5 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:29:07.693] Server  ERROR    ⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '..@/components/footer/Footer'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+> 2 | import Footer from'..@/components/footer/Footer';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import "./globals.css";
+  4 |
+  5 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:29:07.703] Server  ERROR    ⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '..@/components/footer/Footer'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+> 2 | import Footer from'..@/components/footer/Footer';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import "./globals.css";
+  4 |
+  5 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:29:07.771] Server  ERROR    ⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '..@/components/footer/Footer'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+> 2 | import Footer from'..@/components/footer/Footer';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import "./globals.css";
+  4 |
+  5 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:29:07.787] Server  ERROR    ⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '..@/components/footer/Footer'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+> 2 | import Footer from'..@/components/footer/Footer';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import "./globals.css";
+  4 |
+  5 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:29:07.815] Server  ERROR    ⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '..@/components/footer/Footer'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+> 2 | import Footer from'..@/components/footer/Footer';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import "./globals.css";
+  4 |
+  5 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:29:07.837] Server  ERROR    ⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '..@/components/footer/Footer'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+> 2 | import Footer from'..@/components/footer/Footer';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import "./globals.css";
+  4 |
+  5 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:29:07.865] Server  ERROR    ⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '..@/components/footer/Footer'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+> 2 | import Footer from'..@/components/footer/Footer';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import "./globals.css";
+  4 |
+  5 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:29:07.871] Server  ERROR    ⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '..@/components/footer/Footer'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+> 2 | import Footer from'..@/components/footer/Footer';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import "./globals.css";
+  4 |
+  5 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:29:07.873] Server  ERROR    ⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '..@/components/footer/Footer'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+> 2 | import Footer from'..@/components/footer/Footer';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import "./globals.css";
+  4 |
+  5 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:29:07.879] Server  ERROR    ⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '..@/components/footer/Footer'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+> 2 | import Footer from'..@/components/footer/Footer';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import "./globals.css";
+  4 |
+  5 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:29:07.907] Server  ERROR    ⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '..@/components/footer/Footer'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+> 2 | import Footer from'..@/components/footer/Footer';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import "./globals.css";
+  4 |
+  5 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:29:08.558] Browser ERROR   ./app/layout.js:2:1
+Module not found: Can't resolve '..@/components/footer/Footer'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+> 2 | import Footer from'..@/components/footer/Footer';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import "./globals.css";
+  4 |
+  5 | const geistSans = Geist({
+
+https://nextjs.org/docs/messages/module-not-found
+[00:29:08.558] Browser ERROR   ./app/layout.js:2:1
+Module not found: Can't resolve '..@/components/footer/Footer'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+> 2 | import Footer from'..@/components/footer/Footer';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import "./globals.css";
+  4 |
+  5 | const geistSans = Geist({
+
+https://nextjs.org/docs/messages/module-not-found
+[00:30:32.223] Server  ERROR    ⨯ ./app/layout.js:2:1
+Module not found: Can't resolve '..@/components/footer/Footer'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+> 2 | import Footer from'..@/components/footer/Footer';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import "./globals.css";
+  4 |
+  5 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:30:32.461] Browser ERROR   ./app/layout.js:2:1
+Module not found: Can't resolve '..@/components/footer/Footer'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+> 2 | import Footer from'..@/components/footer/Footer';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import "./globals.css";
+  4 |
+  5 | const geistSans = Geist({
+
+https://nextjs.org/docs/messages/module-not-found
+[00:30:34.431] Browser ERROR   ./app/layout.js:2:1
+Module not found: Can't resolve '..@/components/footer/Footer'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+> 2 | import Footer from'..@/components/footer/Footer';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import "./globals.css";
+  4 |
+  5 | const geistSans = Geist({
+
+https://nextjs.org/docs/messages/module-not-found
+[00:30:34.583] Browser ERROR   ./app/layout.js:2:1
+Module not found: Can't resolve '..@/components/footer/Footer'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+> 2 | import Footer from'..@/components/footer/Footer';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import "./globals.css";
+  4 |
+  5 | const geistSans = Geist({
+
+https://nextjs.org/docs/messages/module-not-found
+[00:30:37.190] Browser ERROR   uncaughtError: Error: ./app/layout.js:2:1
+Module not found: Can't resolve '..@/components/footer/Footer'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+> 2 | import Footer from'..@/components/footer/Footer';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import "./globals.css";
+  4 |
+  5 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:30:37.443] Browser ERROR   ./app/layout.js:2:1
+Module not found: Can't resolve '..@/components/footer/Footer'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+> 2 | import Footer from'..@/components/footer/Footer';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import "./globals.css";
+  4 |
+  5 | const geistSans = Geist({
+
+https://nextjs.org/docs/messages/module-not-found
+[00:30:37.857] Browser ERROR   ./app/layout.js:2:1
+Module not found: Can't resolve '..@/components/footer/Footer'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+> 2 | import Footer from'..@/components/footer/Footer';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import "./globals.css";
+  4 |
+  5 | const geistSans = Geist({
+
+https://nextjs.org/docs/messages/module-not-found
+[00:30:54.369] Server  LOG      ✓ Compiled in 127ms
+[00:30:54.836] Server  ERROR   C:\Users\carlo\OneDrive\Documentos\GitHub\Atividades de Paulo\aula de next\Aula-NEXT\my-app\.next\dev\server\chunks\ssr\[root-of-the-server]__99dba3d9._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:30:54.839] Server  ERROR    ⨯ ReferenceError: StyleSheet is not defined
+[00:30:55.324] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:30:55.559] Browser ERROR   uncaughtError: ReferenceError: StyleSheet is not defined
+[00:31:24.933] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:31:24.946] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:31:25.348] Server  ERROR   C:\Users\carlo\OneDrive\Documentos\GitHub\Atividades de Paulo\aula de next\Aula-NEXT\my-app\.next\dev\server\chunks\ssr\[root-of-the-server]__e97d8415._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:31:25.350] Server  ERROR    ⨯ ReferenceError: StyleSheet is not defined
+[00:31:25.897] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:31:26.543] Browser ERROR   uncaughtError: ReferenceError: StyleSheet is not defined
+[00:31:36.704] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:31:37.512] Browser WARN    Image with src "/logo-ifpb.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:32:09.558] Server  LOG      ✓ Compiled in 18ms
