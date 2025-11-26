@@ -1,0 +1,24 @@
+/* [project]/components/header/Header.module.css [app-client] (css) */
+.Header-module__-2yUHq__header {
+  color: #fff;
+  background-color: #005f41;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  display: flex;
+  box-shadow: 0 2px 4px #0000001a;
+}
+
+.Header-module__-2yUHq__link {
+  color: #fff;
+  margin-right: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.Header-module__-2yUHq__titulo {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+/*# sourceMappingURL=components_header_Header_module_css_bad6b30c._.single.css.map*/

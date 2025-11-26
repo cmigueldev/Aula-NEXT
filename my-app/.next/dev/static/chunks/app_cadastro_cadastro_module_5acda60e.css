@@ -1,0 +1,69 @@
+/* [project]/app/cadastro/cadastro.module.css [app-client] (css) */
+.cadastro-module__pyH3kG__main {
+  background-color: #f4f4f4;
+  flex-direction: column;
+  align-items: center;
+  min-height: 80vh;
+  padding: 40px 20px 100px;
+  display: flex;
+}
+
+.cadastro-module__pyH3kG__card {
+  background-color: #fff;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px #0000001a;
+}
+
+.cadastro-module__pyH3kG__tituloPagina {
+  color: #333;
+  text-align: center;
+  border-bottom: 2px solid #005f41;
+  margin-bottom: 1.5rem;
+  padding-bottom: 10px;
+}
+
+.cadastro-module__pyH3kG__form {
+  flex-direction: column;
+  gap: 15px;
+  display: flex;
+}
+
+.cadastro-module__pyH3kG__inputGroup {
+  flex-direction: column;
+  display: flex;
+}
+
+.cadastro-module__pyH3kG__label {
+  color: #555;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.cadastro-module__pyH3kG__input, .cadastro-module__pyH3kG__textarea {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.cadastro-module__pyH3kG__button {
+  color: #fff;
+  cursor: pointer;
+  background-color: #005f41;
+  border: none;
+  border-radius: 4px;
+  margin-top: 10px;
+  padding: 12px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: background-color .3s;
+}
+
+.cadastro-module__pyH3kG__button:hover {
+  background-color: #00442e;
+}
+
+/*# sourceMappingURL=app_cadastro_cadastro_module_5acda60e.css.map*/
