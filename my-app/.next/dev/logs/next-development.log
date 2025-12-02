@@ -1,22 +1,23 @@
-[00:00:09.500] Server  LOG      ✓ Ready in 8.3s
-[00:00:27.704] Server  LOG      ○ Compiling / ...
-[00:00:37.113] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:37.318] Browser WARN    Image with src "/logo-ifpb.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:00:12.859] Server  LOG      ✓ Ready in 10.5s
+[00:00:15.946] Server  LOG      ○ Compiling / ...
+[00:00:25.013] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:25.086] Browser WARN    Image with src "/logo-ifpb.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:00:44.074] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:44.188] Browser WARN    Image with src "/logo-ifpb.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:00:34.545] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:38.782] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:41.573] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:52.313] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:21:08.359] Server  LOG      ✓ Compiled in 949ms
+[00:21:08.379] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/client/image-component.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:21:10.656] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:22:12.960] Browser WARN    Image with src "/logo-ifpb.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:01:52.337] Server  LOG      ✓ Compiled in 767ms
-[00:01:53.342] Server  ERROR   C:\Users\carlo\OneDrive\Documentos\GitHub\Atividades de Paulo\aula de next\Aula-NEXT\my-app\.next\dev\server\chunks\ssr\[root-of-the-server]__e97d8415._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:01:53.355] Server  ERROR    ⨯ ReferenceError: Header is not defined
-[00:01:53.785] Browser ERROR   uncaughtError: ReferenceError: Header is not defined
-[00:02:11.213] Server  ERROR   C:\Users\carlo\OneDrive\Documentos\GitHub\Atividades de Paulo\aula de next\Aula-NEXT\my-app\.next\dev\server\chunks\ssr\[root-of-the-server]__e97d8415._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:02:11.215] Server  ERROR    ⨯ ReferenceError: Header is not defined
-[00:02:12.518] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:12.518] Browser ERROR   uncaughtError: ReferenceError: Header is not defined
-[00:02:34.972] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:02:35.014] Server  LOG      ✓ Compiled in 2.7s
-[00:02:35.019] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:02:36.408] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:36.675] Browser WARN    Image with src "/logo-ifpb.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:33:06.530] Server  LOG      ✓ Compiled in 383ms
+[00:33:07.503] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/client/image-component.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:33:09.584] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:33:20.883] Browser WARN    Image with src "/logo-ifpb.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:33:23.277] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:33:23.390] Browser WARN    Image with src "/logo-ifpb.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:33:27.867] Server  LOG      ○ Compiling /sobre ...

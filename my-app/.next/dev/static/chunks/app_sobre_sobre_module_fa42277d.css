@@ -1,0 +1,55 @@
+/* [project]/app/sobre/sobre.module.css [app-client] (css) */
+.sobre-module__u5CazW__main {
+  background-color: #f4f4f4;
+  flex-direction: column;
+  align-items: center;
+  min-height: 80vh;
+  padding: 40px 20px 100px;
+  display: flex;
+}
+
+.sobre-module__u5CazW__container {
+  color: #333;
+  background-color: #fff;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 800px;
+  padding: 3rem;
+  line-height: 1.6;
+  box-shadow: 0 4px 6px #0000001a;
+}
+
+.sobre-module__u5CazW__titulo {
+  color: #005f41;
+  border-bottom: 2px solid #eee;
+  margin-bottom: 1rem;
+  padding-bottom: 10px;
+  font-size: 2rem;
+}
+
+.sobre-module__u5CazW__subtitulo {
+  color: #444;
+  margin-top: 1.5rem;
+  margin-bottom: .5rem;
+  font-size: 1.4rem;
+}
+
+.sobre-module__u5CazW__texto {
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+.sobre-module__u5CazW__lista {
+  padding: 0;
+  list-style-type: none;
+}
+
+.sobre-module__u5CazW__itemLista {
+  background-color: #e9f5f0;
+  border-left: 5px solid #005f41;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+}
+
+/*# sourceMappingURL=app_sobre_sobre_module_fa42277d.css.map*/
