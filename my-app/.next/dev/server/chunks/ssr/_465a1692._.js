@@ -1,0 +1,302 @@
+module.exports = [
+"[project]/api/livro_api.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "cadastrarLivro",
+    ()=>cadastrarLivro
+]);
+const cadastrarLivro = async (livro)=>{
+    // URL do seu Controller no Spring Boot (ajuste o endpoint '/livros' conforme seu backend)
+    const endpoint = 'http://localhost:8080/livros';
+    try {
+        const response = await fetch(endpoint, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(livro)
+        });
+        if (!response.ok) {
+            // Se o backend retornar erro (400, 500), lançamos uma exceção
+            const erroData = await response.text(); // ou response.json() dependendo do backend
+            throw new Error(`Erro ao cadastrar: ${erroData || response.statusText}`);
+        }
+        // Se quiser retornar o livro salvo com o ID gerado:
+        return await response.json();
+    } catch (error) {
+        // Repassamos o erro para quem chamou a função tratar
+        console.error("Erro na comunicação com a API:", error);
+        throw error;
+    }
+};
+}),
+"[project]/app/cadastro/cadastro.module.css [app-ssr] (css module)", ((__turbopack_context__) => {
+
+__turbopack_context__.v({
+  "button": "cadastro-module__pyH3kG__button",
+  "card": "cadastro-module__pyH3kG__card",
+  "form": "cadastro-module__pyH3kG__form",
+  "input": "cadastro-module__pyH3kG__input",
+  "inputGroup": "cadastro-module__pyH3kG__inputGroup",
+  "label": "cadastro-module__pyH3kG__label",
+  "main": "cadastro-module__pyH3kG__main",
+  "textarea": "cadastro-module__pyH3kG__textarea",
+  "tituloPagina": "cadastro-module__pyH3kG__tituloPagina",
+});
+}),
+"[project]/app/cadastro/page.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>CadastroPage
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$api$2f$livro_api$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/api/livro_api.js [app-ssr] (ecmascript)"); // <--- Importação do serviço
+var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$cadastro$2f$cadastro$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/app/cadastro/cadastro.module.css [app-ssr] (css module)");
+'use client';
+;
+;
+;
+;
+function CadastroPage() {
+    const [livro, setLivro] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])({
+        titulo: '',
+        autor: '',
+        isbn: '',
+        ano: '',
+        resumo: ''
+    });
+    // Novo estado para feedback visual
+    const [mensagem, setMensagem] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])({
+        texto: '',
+        tipo: ''
+    });
+    const handleChange = (e)=>{
+        const { name, value } = e.target;
+        setLivro((prevState)=>({
+                ...prevState,
+                [name]: value
+            }));
+    };
+    // Função atualizada para enviar ao Backend
+    const handleSubmit = async (e)=>{
+        e.preventDefault();
+        setMensagem({
+            texto: 'Enviando...',
+            tipo: 'info'
+        });
+        try {
+            await (0, __TURBOPACK__imported__module__$5b$project$5d2f$api$2f$livro_api$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cadastrarLivro"])(livro);
+            setMensagem({
+                texto: 'Livro cadastrado com sucesso!',
+                tipo: 'sucesso'
+            });
+            setLivro({
+                titulo: '',
+                autor: '',
+                isbn: '',
+                ano: '',
+                resumo: ''
+            }); // Limpa form
+        } catch (error) {
+            console.error(error);
+            setMensagem({
+                texto: 'Erro ao conectar com o servidor.',
+                tipo: 'erro'
+            });
+        }
+    };
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$cadastro$2f$cadastro$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].main,
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$cadastro$2f$cadastro$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].card,
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                        className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$cadastro$2f$cadastro$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].tituloPagina,
+                        children: "Cadastro de Livros"
+                    }, void 0, false, {
+                        fileName: "[project]/app/cadastro/page.js",
+                        lineNumber: 53,
+                        columnNumber: 10
+                    }, this),
+                    mensagem.texto && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        style: {
+                            padding: '10px',
+                            marginBottom: '10px',
+                            backgroundColor: mensagem.tipo === 'sucesso' ? '#d4edda' : mensagem.tipo === 'erro' ? '#f8d7da' : '#e2e3e5',
+                            color: mensagem.tipo === 'sucesso' ? '#155724' : mensagem.tipo === 'erro' ? '#721c24' : '#383d41',
+                            borderRadius: '4px'
+                        },
+                        children: mensagem.texto
+                    }, void 0, false, {
+                        fileName: "[project]/app/cadastro/page.js",
+                        lineNumber: 58,
+                        columnNumber: 12
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
+                        onSubmit: handleSubmit,
+                        className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$cadastro$2f$cadastro$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].form,
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$cadastro$2f$cadastro$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].inputGroup,
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                        htmlFor: "titulo",
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$cadastro$2f$cadastro$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].label,
+                                        children: "Título"
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/cadastro/page.js",
+                                        lineNumber: 74,
+                                        columnNumber: 14
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                        type: "text",
+                                        id: "titulo",
+                                        name: "titulo",
+                                        value: livro.titulo,
+                                        onChange: handleChange,
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$cadastro$2f$cadastro$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].input,
+                                        required: true
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/cadastro/page.js",
+                                        lineNumber: 75,
+                                        columnNumber: 14
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/app/cadastro/page.js",
+                                lineNumber: 73,
+                                columnNumber: 12
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$cadastro$2f$cadastro$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].inputGroup,
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                        htmlFor: "autor",
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$cadastro$2f$cadastro$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].label,
+                                        children: "Autor"
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/cadastro/page.js",
+                                        lineNumber: 88,
+                                        columnNumber: 14
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                        type: "text",
+                                        id: "autor",
+                                        name: "autor",
+                                        value: livro.autor,
+                                        onChange: handleChange,
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$cadastro$2f$cadastro$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].input,
+                                        required: true
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/cadastro/page.js",
+                                        lineNumber: 89,
+                                        columnNumber: 14
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/app/cadastro/page.js",
+                                lineNumber: 87,
+                                columnNumber: 12
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$cadastro$2f$cadastro$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].inputGroup,
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                        htmlFor: "isbn",
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$cadastro$2f$cadastro$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].label,
+                                        children: "ISBN"
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/cadastro/page.js",
+                                        lineNumber: 102,
+                                        columnNumber: 14
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                        type: "text",
+                                        id: "isbn",
+                                        name: "isbn",
+                                        value: livro.isbn,
+                                        onChange: handleChange,
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$cadastro$2f$cadastro$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].input
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/cadastro/page.js",
+                                        lineNumber: 103,
+                                        columnNumber: 14
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/app/cadastro/page.js",
+                                lineNumber: 101,
+                                columnNumber: 12
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$cadastro$2f$cadastro$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].inputGroup,
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                        htmlFor: "ano",
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$cadastro$2f$cadastro$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].label,
+                                        children: "Ano"
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/cadastro/page.js",
+                                        lineNumber: 115,
+                                        columnNumber: 14
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                        type: "number",
+                                        id: "ano",
+                                        name: "ano",
+                                        value: livro.ano,
+                                        onChange: handleChange,
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$cadastro$2f$cadastro$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].input
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/cadastro/page.js",
+                                        lineNumber: 116,
+                                        columnNumber: 14
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/app/cadastro/page.js",
+                                lineNumber: 114,
+                                columnNumber: 12
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                type: "submit",
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$cadastro$2f$cadastro$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].button,
+                                children: mensagem.texto === 'Enviando...' ? 'Salvando...' : 'Salvar'
+                            }, void 0, false, {
+                                fileName: "[project]/app/cadastro/page.js",
+                                lineNumber: 127,
+                                columnNumber: 12
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/app/cadastro/page.js",
+                        lineNumber: 71,
+                        columnNumber: 10
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/app/cadastro/page.js",
+                lineNumber: 52,
+                columnNumber: 8
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/app/cadastro/page.js",
+            lineNumber: 51,
+            columnNumber: 6
+        }, this)
+    }, void 0, false);
+}
+}),
+"[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"use strict";
+
+module.exports = __turbopack_context__.r("[project]/node_modules/next/dist/server/route-modules/app-page/module.compiled.js [app-ssr] (ecmascript)").vendored['react-ssr'].ReactJsxDevRuntime; //# sourceMappingURL=react-jsx-dev-runtime.js.map
+}),
+];
+
+//# sourceMappingURL=_465a1692._.js.map
